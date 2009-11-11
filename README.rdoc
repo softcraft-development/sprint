@@ -4,23 +4,25 @@
 
 == DESCRIPTION:
 
-FIX (describe your package)
+Make dealing with execution of external processes easier.
 
 == FEATURES/PROBLEMS:
 
-* FIX (list of features or problems)
+* Encapsulate the output of an external program/command and its return code in a single object.
 
 == SYNOPSIS:
 
-  FIX (code sample of usage)
+sprint adds a "sprint" method to the Kernel module. This method executes the given command (using Kernel.`). It then captures the program output and resulting Process::Status object (via $?) in a single Sprint::Status object. 
 
 == REQUIREMENTS:
 
-* FIX (list of requirements)
+* Shoulda for testing; no dependencies on the core code.
 
 == INSTALL:
 
-* FIX (sudo gem install, anything else)
+Assuming you have Gemcutter in your gem sources:
+
+* sudo gem install sprint
 
 == LICENSE:
 
