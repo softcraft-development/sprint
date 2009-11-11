@@ -15,6 +15,11 @@ module Sprint
     alias :output :to_s
     alias :to_string :to_s
     
+    def good_output
+      raise "Process exited with error code: #{return_code}" unless success?
+      @output
+    end
+    
     def to_i
       @status.exitstatus
     end
