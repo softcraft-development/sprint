@@ -29,6 +29,17 @@ class TestSprint < Test::Unit::TestCase
       should "have a zero status" do
         assert_equal 0, @results.return_code
       end
+      
+      should "be convertible to a string" do
+        a_string = ("String: " + @results).strip
+        assert_equal "String: Test", a_string
+      end
+
+      # Need to find a caller of to_int for an real-world test of int coercion
+      # should "be convertible to an int" do
+      #   an_int = 1 + @results
+      #   assert_equal 1, an_int
+      # end
     end
 
     context "when executing 'false'" do

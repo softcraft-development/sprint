@@ -9,3 +9,7 @@
 === 1.0.2 2009-11-11
 
 * Fixed project home in gemspec
+
+=== 1.0.3 2009-11-11
+
+* Fixed to_str method
