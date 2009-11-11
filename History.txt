@@ -12,4 +12,4 @@
 
 === 1.0.3 2009-11-11
 
-* Fixed to_str method
+* Fixed String coercion; Sprint::Status now correctly behaves as a String
