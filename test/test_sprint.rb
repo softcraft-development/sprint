@@ -40,6 +40,10 @@ class TestSprint < Test::Unit::TestCase
       #   an_int = 1 + @results
       #   assert_equal 1, an_int
       # end
+      
+      should "return self on check" do
+        assert_equal @results, @results.check
+      end
     end
 
     context "when executing 'false'" do
@@ -63,6 +67,12 @@ class TestSprint < Test::Unit::TestCase
 
       should "have a nonzero status" do
         assert_not_equal 0, @results.return_code
+      end
+      
+      should "raise exception on check" do
+        assert_raise RuntimeError do
+          @results.check
+        end
       end
     end
   end
