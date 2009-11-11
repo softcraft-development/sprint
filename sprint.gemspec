@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{sprint}
-  s.version = "1.0.1"
+  s.version = "1.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Craig Walker"]
@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email = ["craig@softcraft.ca"]
   s.extra_rdoc_files = ["History.txt", "Manifest.txt"]
   s.files = ["History.txt", "Manifest.txt", "README.rdoc", "Rakefile", "lib/sprint.rb", "script/console", "script/destroy", "script/generate", "test/test_helper.rb", "test/test_sprint.rb"]
-  s.homepage = %q{http://github.com/#{github_username}/#{project_name}}
+  s.homepage = %q{http://github.com/softcraft-development/sprint}
   s.post_install_message = %q{PostInstall.txt}
   s.rdoc_options = ["--main", "README.rdoc"]
   s.require_paths = ["lib"]
